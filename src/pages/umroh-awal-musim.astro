@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Hero from '../components/Hero.astro';
+import TrustBadges from '../components/TrustBadges';
+import ProblemAgitation from '../components/ProblemAgitation';
+import ValueProposition from '../components/ValueProposition';
+import Packages from '../components/Packages';
+import RegistrationForm from '../components/RegistrationForm';
+import Gallery from '../components/Gallery';
+import Testimonials from '../components/Testimonials';
+import Faq from '../components/Faq';
+import CallToAction from '../components/CallToAction';
+import Footer from '../components/Footer';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
+import { awalMusimData } from '../data/pages/awal-musim';
+import { siteConfig } from '../data/config';
+
+const title = "Paket Umroh Awal Musim 1448H Hemat & Berkah | KotaNabi";
+const description = "Awali musim Umroh 1448H dengan penuh keberkahan bersama KotaNabi. Paket hemat, fasilitas prima, bimbingan sesuai Sunnah. Daftar rombongan pertama sekarang!";
+const targetDate = new Date(awalMusimData.hero.targetDate);
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "KotaNabi - Paket Umroh Awal Musim",
+  "description": description,
+  "url": "https://lp.kotanabi.com/umroh-awal-musim",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": siteConfig.phone.display,
+    "contactType": "customer service"
+  },
+  "priceRange": "$$$",
+  "image": "https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/10022/mp-mekkah-kaabah.webp"
+};
+---
+
+<Layout title={title} description={description}>
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+
+    <div class="bg-accent font-sans text-dark antialiased overflow-x-hidden">
+      <Header client:load />
+      <main>
+        <Hero 
+          title={awalMusimData.hero.title}
+          subtitle={awalMusimData.hero.subtitle}
+          targetDate={targetDate}
+        />
+        <TrustBadges logos={siteConfig.trustBadges} />
+        <Packages {...awalMusimData.packages} />
+
+        <div id="registration-form" class="bg-gray-50">
+            <RegistrationForm 
+                client:load 
+                title="Daftar Rombongan Pertama Awal Musim 1448H"
+                description="Jadilah jamaah pertama yang berangkat di pembukaan musim Umroh 1448H. Isi form di bawah untuk konsultasi gratis dan amankan seat Anda."
+                packages={awalMusimData.packages.items}
+                formSource="Landing Page Umroh Awal Musim"
+                programName="Umroh Awal Musim 1448H"
+            />
+        </div>
+
+        <ValueProposition 
+            title={awalMusimData.valueProposition.title}
+            subtitle={awalMusimData.valueProposition.subtitle}
+            features={awalMusimData.valueProposition.features}
+        />
+        <ProblemAgitation 
+            title={awalMusimData.problemAgitation.title}
+            description={awalMusimData.problemAgitation.description}
+            painPointsTitle={awalMusimData.problemAgitation.painPointsTitle}
+            painPoints={awalMusimData.problemAgitation.painPoints}
+            solutionTitle={awalMusimData.problemAgitation.solutionTitle}
+            solutionPoints={awalMusimData.problemAgitation.solutionPoints}
+        />
+        <Gallery 
+            title={awalMusimData.gallery.title}
+            subtitle={awalMusimData.gallery.subtitle}
+            images={awalMusimData.gallery.images}
+        />
+        <Testimonials 
+            title={awalMusimData.testimonials.title}
+            subtitle={awalMusimData.testimonials.subtitle}
+            items={awalMusimData.testimonials.items}
+        />
+        <Faq items={awalMusimData.faq} client:visible />
+        <CallToAction 
+            title={awalMusimData.cta.title}
+            description={awalMusimData.cta.description}
+            boxTitle={awalMusimData.cta.boxTitle}
+            boxDescription={awalMusimData.cta.boxDescription}
+            buttonText={awalMusimData.cta.buttonText}
+            whatsappMessage={awalMusimData.cta.whatsappMessage}
+        />
+      </main>
+      <Footer />
+      <FloatingWhatsApp whatsappMessage={awalMusimData.cta.whatsappMessage} client:idle />
+    </div>
+</Layout>

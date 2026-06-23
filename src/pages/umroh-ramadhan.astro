@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Hero from '../components/Hero.astro';
+import TrustBadges from '../components/TrustBadges';
+import ProblemAgitation from '../components/ProblemAgitation';
+import ValueProposition from '../components/ValueProposition';
+import Packages from '../components/Packages';
+import RegistrationForm from '../components/RegistrationForm';
+import Gallery from '../components/Gallery';
+import Testimonials from '../components/Testimonials';
+import Faq from '../components/Faq';
+import CallToAction from '../components/CallToAction';
+import Footer from '../components/Footer';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
+import { ramadhanData } from '../data/pages/ramadhan';
+import { siteConfig } from '../data/config';
+
+const title = "Paket Umroh Ramadhan 2026 Hemat & Berkah | KotaNabi";
+const description = "Wujudkan impian Umroh Ramadhan 2026 bersama travel resmi & amanah. Paket hemat mulai Rp28 Juta. Fasilitas nyaman, bimbingan sunnah. Daftar sekarang!";
+const targetDate = new Date(ramadhanData.hero.targetDate);
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "KotaNabi - Paket Umroh Ramadhan",
+  "description": description,
+  "url": "https://lp.kotanabi.com/umroh-ramadhan",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": siteConfig.phone.display,
+    "contactType": "customer service"
+  },
+  "priceRange": "$$$",
+  "image": "https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/10022/mp-mekkah-kaabah.webp"
+};
+---
+
+<Layout title={title} description={description}>
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+
+    <div class="bg-accent font-sans text-dark antialiased overflow-x-hidden">
+      <Header client:load />
+      <main>
+        <Hero 
+          title={ramadhanData.hero.title}
+          subtitle={ramadhanData.hero.subtitle}
+          targetDate={targetDate}
+        />
+        <TrustBadges logos={siteConfig.trustBadges} />
+        <Packages {...ramadhanData.packages} />
+
+        <div id="registration-form" class="bg-gray-50">
+            <RegistrationForm 
+                client:load 
+                title="Amankan Seat Umroh Ramadhan 2026"
+                description="Kuota Umroh Ramadhan, terutama paket Itikaf, sangat cepat terisi (Batch 1 sudah penuh!). Isi form di bawah untuk konsultasi dan booking seat Batch 2."
+                packages={ramadhanData.packages.items}
+                formSource="Landing Page Umroh Ramadhan"
+                programName="Umroh Ramadhan 2026"
+            />
+        </div>
+
+        <ValueProposition 
+            title={ramadhanData.valueProposition.title}
+            subtitle={ramadhanData.valueProposition.subtitle}
+            features={ramadhanData.valueProposition.features}
+        />
+        <ProblemAgitation 
+            title={ramadhanData.problemAgitation.title}
+            description={ramadhanData.problemAgitation.description}
+            painPointsTitle={ramadhanData.problemAgitation.painPointsTitle}
+            painPoints={ramadhanData.problemAgitation.painPoints}
+            solutionTitle={ramadhanData.problemAgitation.solutionTitle}
+            solutionPoints={ramadhanData.problemAgitation.solutionPoints}
+        />
+        <Gallery 
+            title={ramadhanData.gallery.title}
+            subtitle={ramadhanData.gallery.subtitle}
+            images={ramadhanData.gallery.images}
+        />
+        <Testimonials 
+            title={ramadhanData.testimonials.title}
+            subtitle={ramadhanData.testimonials.subtitle}
+            items={ramadhanData.testimonials.items}
+        />
+        <Faq items={ramadhanData.faq} client:visible />
+        <CallToAction 
+            title={ramadhanData.cta.title}
+            description={ramadhanData.cta.description}
+            boxTitle={ramadhanData.cta.boxTitle}
+            boxDescription={ramadhanData.cta.boxDescription}
+            buttonText={ramadhanData.cta.buttonText}
+            whatsappMessage={ramadhanData.cta.whatsappMessage}
+        />
+      </main>
+      <Footer />
+      <FloatingWhatsApp whatsappMessage={ramadhanData.cta.whatsappMessage} client:idle />
+    </div>
+</Layout>

@@ -8,8 +8,8 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         <div>
           <img 
-            src="https://storage.googleapis.com/muslimpergi/uploads/site/logo2/2/medium_logo-kotanabi-umroh-online-terpercaya.webp" 
-            alt="Baitullah Journey Logo" 
+            src="/assets/logo-kotanabi-umroh-online-terpercaya.webp" 
+            alt="KotaNabi Logo" 
             className="h-12 mb-4 mx-auto md:mx-0" 
           />
           <p className="text-gray-400 break-words">
