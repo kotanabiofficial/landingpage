@@ -11,7 +11,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "wrangler pages deploy ./dist && git checkout gh-pages && cp -fr ./dist/* . && git add --all && git commit -m \"Update Landing Page\" && git push origin gh-pages && git checkout main"
+    "deploy": "git add --all && git commit -m \"Update Landing Page\" && git push origin main && wrangler pages deploy ./dist && git checkout gh-pages && cp -fr ./dist/* . && git add --all && git commit -m \"Update Landing Page\" && git push origin gh-pages && git checkout main"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
