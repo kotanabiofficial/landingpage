@@ -1,0 +1,228 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
+import SavingsCalculator from '../components/SavingsCalculator';
+import Testimonials from '../components/Testimonials';
+import CallToAction from '../components/CallToAction';
+import Faq from '../components/Faq';
+
+// Fetch umroh packages at build time
+let packages = [];
+try {
+  const response = await fetch('https://kotanabi.com/api/listings?category=UMROH&sort_by=desc&sort=price_start');
+  if (response.ok) {
+    const json = await response.json();
+    if (json.data && Array.isArray(json.data)) {
+      packages = json.data.map((pkg: any) => ({
+        name: pkg.name,
+        price_start: pkg.price_start,
+        currency: pkg.currency,
+        slug: pkg.slug
+      }));
+    }
+  }
+} catch (error) {
+  console.error("Failed to fetch packages for tabungan umroh:", error);
+}
+
+const tabunganFaq = [
+  {
+    question: "Apakah uang tabungan saya aman?",
+    answer: "Tentu aman. Program Tabungan Umroh KotaNabi didukung oleh Bank Rakyat Indonesia (BRI). Dana Anda disimpan dalam bentuk rekening fisik di bank yang dilindungi oleh sistem keuangan nasional, bukan disimpan oleh pihak travel."
+  },
+  {
+    question: "Bagaimana cara melakukan setoran awal?",
+    answer: "Setelah mendaftar melalui form aplikasi, Anda akan menerima nomor virtual account (BRIVA). Anda bisa melakukan setoran awal maupun setoran berikutnya ke nomor tersebut kapanpun dan dimanapun tanpa harus ke kantor cabang."
+  },
+  {
+    question: "Apakah ada buku tabungan fisiknya?",
+    answer: "Ya. Setelah pendaftaran berhasil diproses, pihak bank akan mencetak dan kami akan mengirimkan buku rekening tabungan fisik secara langsung ke alamat rumah Anda sebagai bukti sah kepemilikan rekening."
+  },
+  {
+    question: "Apakah ada target waktu atau denda jika telat menabung?",
+    answer: "Tidak ada. Anda bebas melakukan setoran kapanpun dan dimanapun sesuai kemampuan finansial Anda. Jika Anda butuh waktu lebih lama dari target simulasi Anda, tidak akan ada denda atau pinalti apapun yang dibebankan."
+  },
+  {
+    question: "Bagaimana jika saya ingin berhenti atau membatalkan tabungan?",
+    answer: "Program tabungan umroh ini diterbitkan atas komitmen bersama antara jamaah dan travel, di mana dana dialokasikan khusus untuk keberangkatan umroh Anda. Namun, apabila terjadi hal-hal mendesak yang mengharuskan Anda membatalkan program dan menarik dana yang sudah terkumpul, hal tersebut tetap dapat dilakukan dengan proses konfirmasi bersama antara pihak Bank, Jamaah, dan Travel."
+  }
+];
+
+const tabunganTestimonials = [
+  {
+    quote: "Awalnya saya ragu nabung umroh karena takut uangnya disalahgunakan. Tapi di KotaNabi kerjasamanya pakai bank terpercaya dan dapat buku tabungan fisik! Uang aman dan sekarang alhamdulillah sudah berangkat.",
+    name: "Ibu Rahmawati",
+    location: "Jakarta",
+    avatar: "https://i.pravatar.cc/100?img=47"
+  },
+  {
+    quote: "Sistem virtual account-nya gampang banget! Saya biasa nabung kalau lagi ada rezeki lebih tanpa perlu repot datang ke bank. Dari simulasi yang tadinya 3 tahun, ternyata 2 tahun uang saya sudah cukup buat berangkat.",
+    name: "Bapak Supriyono",
+    location: "Surabaya",
+    avatar: "https://i.pravatar.cc/100?img=11"
+  },
+  {
+    quote: "Sangat transparan. Tim KotaNabi membimbing dari proses buka rekening sampai buku tabungan diantar ke rumah. Pelayanannya juara, ibadahnya pun difasilitasi hotel bintang 5 sesuai janji.",
+    name: "Mbak Anisa",
+    location: "Bandung",
+    avatar: "https://i.pravatar.cc/100?img=9"
+  }
+];
+---
+
+<Layout title="Tabungan Umroh Aman & Resmi Bersama Travel Umroh Terpercaya" description="Wujudkan impian ibadah ke Tanah Suci dengan Tabungan Umroh KotaNabi yang didukung oleh bank terpercaya. Cicilan ringan, aman, transparan, dan jaminan pasti berangkat.">
+  <div class="bg-accent font-sans text-dark antialiased overflow-x-hidden">
+    <Header client:load />
+    
+    <main>
+      <!-- Hero Section -->
+      <section class="pt-24 pb-16 lg:pt-32 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="lg:w-1/2">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif text-secondary leading-tight mb-6">
+              Wujudkan Impian<br/>
+              ke Tanah Suci<br/>
+              dengan Tabungan<br/>
+              Umroh <span class="text-primary">KotaNabi</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-8 max-w-lg">
+              Sisihkan mulai dari puluhan ribu per hari dan jadikan niat suci Anda nyata. Tabungan aman dengan buku rekening fisik dari bank terpercaya, pasti berangkat bersama <span class="font-bold text-secondary">Travel Rekomendasi KotaNabi</span>.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://api.whatsapp.com/send?phone=628561500883&text=Halo%20KotaNabi,%20saya%20tertarik%20dengan%20program%20Tabungan%20Umroh" target="_blank" class="bg-primary hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full shadow-lg text-center transition-colors">
+                Konsultasi Gratis
+              </a>
+              <a href="#kalkulator" class="text-primary font-bold py-3 px-8 rounded-full text-center border-2 border-primary hover:bg-primary/10 transition-all flex items-center justify-center gap-2">
+                Cek Simulasi
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2">
+            <div class="rounded-3xl overflow-hidden shadow-2xl relative border-4 border-white/50">
+              <img src="/assets/hero-tabungan.jpg" alt="Orang memegang smartphone dengan gambar Ka'bah" class="w-full h-auto object-cover aspect-[4/3] lg:aspect-[4/3]" />
+              <div class="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Keunggulan Section -->
+      <section class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold font-serif text-secondary mb-4">Mengapa Memilih Tabungan Umroh KotaNabi?</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto mb-16 text-lg">
+            Siapkan dana ibadah Anda tanpa rasa khawatir. <span class="font-bold text-secondary">KotaNabi</span> bermitra dengan travel umroh berizin resmi (PPIU) yang menjamin keamanan finansial dan kepastian keberangkatan ibadah umroh Anda.
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-primary/20">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+              </div>
+              <h3 class="text-xl font-bold font-serif text-secondary mb-3">Aman</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Bekerjasama dengan lembaga perbankan resmi yang diawasi langsung oleh Otoritas Jasa Keuangan (OJK) dan Bank Indonesia.
+              </p>
+            </div>
+            
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-primary/20">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+              </div>
+              <h3 class="text-xl font-bold font-serif text-secondary mb-3">Transparan</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Dana tersimpan di bank atas nama jamaah, bukan travel. Anda bisa pantau besaran tabungannya kapan saja.
+              </p>
+            </div>
+            
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-primary/20">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              </div>
+              <h3 class="text-xl font-bold font-serif text-secondary mb-3">Kepastian Berangkat</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Saat dana terkumpul, insyaAllah pasti berangkat karena kami menyediakan beragam paket dan tanggal keberangkatan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kalkulator Section -->
+      <section id="kalkulator" class="bg-white pb-16 pt-8">
+        <SavingsCalculator packages={packages} client:load />
+      </section>
+
+      <!-- Tata Cara Pendaftaran Section -->
+      <section class="py-20 bg-accent/30 border-y border-primary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif text-secondary mb-4">Langkah Mudah Memulai Niat Suci Anda</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Proses pendaftaran Tabungan Umroh KotaNabi sangat praktis dan didukung penuh oleh keamanan sistem <span class="font-bold text-secondary">bank terpercaya</span>.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Step 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 relative mt-6 lg:mt-0">
+              <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-6 left-6 border-4 border-white shadow-sm">1</div>
+              <h3 class="text-xl font-bold font-serif text-secondary mt-6 mb-3">Isi Formulir</h3>
+              <p class="text-gray-600 leading-relaxed">Pendaftaran bisa dilakukan dengan mudah langsung dengan mengisi form di aplikasi kami.</p>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 relative mt-6 lg:mt-0">
+              <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-6 left-6 border-4 border-white shadow-sm">2</div>
+              <h3 class="text-xl font-bold font-serif text-secondary mt-6 mb-3">Setoran Awal</h3>
+              <p class="text-gray-600 leading-relaxed">Jamaah membayar setoran awal sesuai dengan program tabungan yang telah dipilih.</p>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 relative mt-6 lg:mt-0">
+              <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-6 left-6 border-4 border-white shadow-sm">3</div>
+              <h3 class="text-xl font-bold font-serif text-secondary mt-6 mb-3">Terima Virtual Account & Buku</h3>
+              <p class="text-gray-600 leading-relaxed">Mendapatkan nomor virtual account (VA) dan buku rekening fisik akan dikirim ke alamat rumah.</p>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 relative mt-6 lg:mt-0">
+              <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-6 left-6 border-4 border-white shadow-sm">4</div>
+              <h3 class="text-xl font-bold font-serif text-secondary mt-6 mb-3">Nabung Fleksibel</h3>
+              <p class="text-gray-600 leading-relaxed">Jamaah dapat melakukan setoran lanjutan kapanpun dan dimanapun sesuai kemampuan.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <Testimonials 
+        title="Apa Kata Jamaah Tabungan Umroh?" 
+        subtitle="Ratusan jamaah telah membuktikan kemudahan menabung umroh bersama kami. Uang aman, hati tenang."
+        items={tabunganTestimonials} 
+        client:visible 
+      />
+
+      <!-- Call To Action -->
+      <CallToAction 
+        title="Mulai Perjalanan Anda Menuju Baitullah"
+        description="Jangan tunda lagi niat suci Anda. Dengan Tabungan Umroh KotaNabi, impian ibadah umroh kini menjadi sangat terjangkau, aman, dan pasti."
+        boxTitle="Daftar Tabungan Umroh Sekarang!"
+        boxDescription="Klik tombol di bawah ini untuk terhubung dengan konsultan KotaNabi dan mulai pembuatan rekening tabungan umroh Anda hari ini juga."
+        buttonText="Daftar via WhatsApp"
+        whatsappMessage="Assalamualaikum KotaNabi, saya tertarik untuk membuka rekening Tabungan Umroh. Bagaimana proses pendaftarannya?"
+        client:visible
+      />
+
+      <!-- FAQ Section -->
+      <Faq items={tabunganFaq} client:visible />
+
+    </main>
+
+    <Footer />
+    <FloatingWhatsApp whatsappMessage="Halo KotaNabi, saya ingin konsultasi mengenai Tabungan Umroh." client:idle />
+  </div>
+</Layout>
