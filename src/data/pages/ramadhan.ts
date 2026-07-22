@@ -60,7 +60,7 @@ export const ramadhanData: LandingPageData = {
   faq: [
     { question: "Kapan waktu terbaik mendaftar Umroh Ramadhan?", answer: "Disarankan mendaftar 3-6 bulan sebelum keberangkatan karena antusiasme yang sangat tinggi dan kuota seat pesawat yang cepat habis." },
     { question: "Apakah biaya Umroh Ramadhan lebih tinggi?", answer: "Ya, biaya sedikit lebih tinggi dikarenakan permintaan akomodasi dan tiket pesawat meningkat drastis pada musim puncak ibadah ini." },
-    { question: "Apa saja dokumen perjalanan yang diperlukan?", answer: "Selain paspor berlaku minimal 6 bulan, Anda memerlukan dokumen perjalanan umroh resmi dan sertifikat vaksin meningitis yang valid, travel akan membantu pengurusan dokumen perjalanan." },
+    { question: "Apa saja persyaratan perjalanan yang diperlukan?", answer: "Selain identitas perjalanan yang berlaku minimal 6 bulan, Anda memerlukan sertifikat vaksin meningitis yang valid, dan pihak travel akan membantu pengurusan seluruh persyaratannya." },
     { question: "Bagaimana persiapan fisik saat berpuasa di sana?", answer: "Jaga stamina dengan olahraga ringan dan pola makan sehat, mengingat aktivitas ibadah akan lebih padat saat sedang berpuasa." },
     { question: "Apa keistimewaan paket I'tikaf Ramadhan?", answer: "Anda dapat berdiam diri di masjid pada 10 hari terakhir Ramadhan untuk berburu kemuliaan malam Lailatul Qadar di Tanah Suci." },
     { question: "Apakah travel rekanan KotaNabi memiliki izin resmi?", answer: "Tentu saja. Semua travel seperti Jana Madinah Wisata (PIHK Resmi) telah melalui verifikasi ketat dan memiliki izin resmi Kemenag RI untuk menjamin keamanan Anda." },

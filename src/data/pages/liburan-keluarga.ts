@@ -63,7 +63,7 @@ export const liburanKeluargaData: LandingPageData = {
     { question: "Bagaimana cuaca di Arab Saudi pada akhir tahun?", answer: "Cuaca di bulan November - Desember cenderung sangat sejuk dan bersahabat (berkisar 20°C - 25°C). Sangat ideal dan tidak membuat anak-anak atau lansia cepat kelelahan saat beribadah tawaf & sa'i." },
     { question: "Apakah tersedia pembimbing khusus wanita/anak?", answer: "Kami menyediakan Muthawwifah (pembimbing wanita) untuk mendampingi jamaah wanita dan membantu kebutuhan keluarga selama di Tanah Suci." },
     { question: "Berapa DP untuk mengamankan kursi liburan akhir tahun?", answer: "Mengingat akhir tahun adalah High Season, kursi sangat cepat habis. Cukup dengan DP ringan mulai 5 Juta, Anda sudah bisa mengamankan kursi untuk sekeluarga." },
-    { question: "Dokumen apa saja yang perlu disiapkan untuk anak?", answer: "Selain paspor, diperlukan Buku Nikah orang tua, Akta Lahir anak, dan Kartu Keluarga asli untuk pembuatan dokumen perjalanan umroh anak." },
+    { question: "Persyaratan administrasi apa saja yang perlu disiapkan untuk anak?", answer: "Selain identitas perjalanan diri, diperlukan Buku Nikah orang tua, Akta Lahir anak, dan Kartu Keluarga asli untuk pendaftaran umroh anak." },
     { question: "Apakah vaksin meningitis masih wajib?", answer: "Sesuai regulasi terbaru, vaksin meningitis masih dianjurkan untuk kesehatan jamaah. Kami akan memandu prosesnya agar mudah bagi keluarga Anda." }
   ],
   cta: {

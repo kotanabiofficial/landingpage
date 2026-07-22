@@ -37,15 +37,15 @@ const Faq: React.FC<FaqProps> = ({ items }) => {
   const defaultFaqData = [
     {
       question: "Bagaimana cara pendaftarannya?",
-      answer: "Sangat mudah. Cukup klik tombol WhatsApp di halaman ini untuk terhubung dengan konsultan kami. Tim kami akan memandu Anda langkah demi langkah, mulai dari pemilihan paket hingga pengumpulan dokumen, sehingga Anda bisa fokus pada persiapan hati."
+      answer: "Sangat mudah. Cukup klik tombol WhatsApp di halaman ini untuk terhubung dengan konsultan kami. Tim kami akan memandu Anda langkah demi langkah, mulai dari pemilihan paket hingga pengumpulan persyaratan administrasi, sehingga Anda bisa fokus pada persiapan hati."
     },
     {
       question: "Apakah harga sudah termasuk semua biaya?",
-      answer: "Betul, harga yang tertera adalah paket lengkap (all-in) yang mencakup tiket pesawat PP, v*s* umroh, akomodasi hotel bintang 5, makan sahur & iftar, transportasi bus AC, mutowwif/pembimbing, dan asuransi perjalanan. Anda hanya perlu menyiapkan untuk pengeluaran pribadi seperti oleh-oleh."
+      answer: "Betul, harga yang tertera adalah paket lengkap (all-in) yang mencakup tiket pesawat PP, izin umroh, akomodasi hotel bintang 5, makan sahur & iftar, transportasi bus AC, mutowwif/pembimbing, dan asuransi perjalanan. Anda hanya perlu menyiapkan untuk pengeluaran pribadi seperti oleh-oleh."
     },
     {
-        question: "Apa saja persyaratan dokumen yang diperlukan?",
-        answer: "Persyaratan utama sangat standar: Pasp*r yang masih berlaku minimal 7 bulan, KTP, Kartu Keluarga, buku nikah (bagi suami istri), dan pas foto. Tidak perlu khawatir, tim kami akan memberikan checklist lengkap dan membantu Anda di setiap tahapannya."
+        question: "Apa saja persyaratan administrasi yang diperlukan?",
+        answer: "Persyaratan utama sangat standar: Identitas perjalanan internasional yang masih berlaku minimal 7 bulan, KTP, Kartu Keluarga, buku nikah (bagi suami istri), dan pas foto. Tidak perlu khawatir, tim kami akan memberikan checklist lengkap dan membantu Anda di setiap tahapannya."
     },
     {
         question: "Seberapa jauh lokasi hotel dari Masjidil Haram dan Nabawi?",
