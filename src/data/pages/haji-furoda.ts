@@ -2,9 +2,9 @@ import type { LandingPageData } from '../types';
 
 export const hajiFurodaData: LandingPageData = {
   hero: {
-    title: "Haji Furoda 2026 Tanpa Antri",
-    subtitle: "Wujudkan impian suci Anda untuk berhaji tahun ini juga melalui program Haji Furoda 2026 tanpa antri, dengan jaminan Legalitas Resmi dan fasilitas VVIP bintang 5 yang memberikan kenyamanan maksimal serta bimbingan ibadah sesuai sunnah bersama Jana Madinah Wisata.",
-    targetDate: "2026-06-15T00:00:00", // Approximate Hajj date for 2026
+    title: "Haji Furoda 2027 Tanpa Antri",
+    subtitle: "Wujudkan impian suci Anda untuk berhaji tahun ini juga melalui program Haji Furoda 2027 tanpa antri, dengan jaminan Legalitas Resmi dan fasilitas VVIP bintang 5 yang memberikan kenyamanan maksimal serta bimbingan ibadah sesuai sunnah bersama Jana Madinah Wisata.",
+    targetDate: "2027-06-15T00:00:00", // Approximate Hajj date for 2027
     bgImage: "https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/10022/mp-mekkah-kaabah.webp"
   },
   valueProposition: {
@@ -45,7 +45,7 @@ export const hajiFurodaData: LandingPageData = {
   },
   problemAgitation: {
     title: "Ingin Menyempurnakan Rukun Islam, Namun Terhalang Antrian?",
-    description: "Setiap muslim pasti merindukan untuk bisa segera menunaikan rukun Islam kelima, namun realita antrian haji yang begitu panjang seringkali menjadi kendala terbesar yang menghalangi niat suci untuk segera berangkat Haji Furoda 2026.",
+    description: "Setiap muslim pasti merindukan untuk bisa segera menunaikan rukun Islam kelima, namun realita antrian haji yang begitu panjang seringkali menjadi kendala terbesar yang menghalangi niat suci untuk segera berangkat Haji Furoda 2027.",
     painPointsTitle: "Kendala yang Sering Dihadapi Calon Jamaah Haji",
     painPoints: [
       "Masa tunggu antrian Haji Reguler di Indonesia saat ini sudah sangat panjang, bahkan bisa mencapai 20 hingga 30 tahun lamanya.",
@@ -55,7 +55,7 @@ export const hajiFurodaData: LandingPageData = {
     ],
     solutionTitle: "Haji Furoda Tanpa Antri Adalah Solusinya",
     solutionPoints: [
-      "Kepastian untuk bisa berangkat menunaikan ibadah haji pada tahun 2026 tanpa perlu melewati masa tunggu antrian yang memakan waktu bertahun-tahun.",
+      "Kepastian untuk bisa berangkat menunaikan ibadah haji pada tahun 2027 tanpa perlu melewati masa tunggu antrian yang memakan waktu bertahun-tahun.",
       "Jaminan keamanan dan ketenangan hati dengan legalitas yang aman melalui izin keberangkatan yang resmi dan terdaftar.",
       "Menikmati fasilitas layanan premium yang dirancang khusus untuk memberikan kenyamanan maksimal, sangat cocok bagi jamaah lansia maupun keluarga.",
       "Mengikuti program perjalanan ibadah yang disusun secara padat dan terstruktur agar Anda dapat fokus sepenuhnya pada kekhusyukan ibadah di Tanah Suci."
@@ -120,20 +120,20 @@ export const hajiFurodaData: LandingPageData = {
       answer: "Untuk paket Haji Furoda Journey Anda akan didampingi penuh oleh Pembimbing Ibadah (Ustadz) dan Muthawif berpengalaman yang bermukim di Saudi. Manasik dan pelaksanaan ibadah haji dibimbing sesuai tuntunan Al-Qur'an dan Sunnah."
     },
     {
-      question: "Kapan waktu terbaik mendaftar Haji Furoda 2026?",
-      answer: "Karena kuota izin Furoda sangat terbatas dan diperebutkan jamaah seluruh dunia, kami sangat menyarankan pendaftaran dilakukan SEKARANG atau paling lambat sebelum Ramadhan 2026 agar proses pengurusan izin keberangkatan haji lebih diprioritaskan."
+      question: "Kapan waktu terbaik mendaftar Haji Furoda 2027?",
+      answer: "Karena kuota izin Furoda sangat terbatas dan diperebutkan jamaah seluruh dunia, kami sangat menyarankan pendaftaran dilakukan SEKARANG atau paling lambat sebelum Ramadhan 2027 agar proses pengurusan izin keberangkatan haji lebih diprioritaskan."
     }
   ],
   cta: {
-    title: "Siap Menjadi Tamu Allah Tahun 2026?",
+    title: "Siap Menjadi Tamu Allah Tahun 2027?",
     description: "Kuota program Furoda sangat terbatas. Jangan biarkan keraguan menunda niat suci Anda. Konsultasikan rencana haji Anda bersama kami sekarang.",
     boxTitle: "Konsultasi Gratis & Cek Ketersediaan Seat",
     boxDescription: "Tim kami siap menjelaskan detail paket, persyaratan administrasi, dan skema pembayaran. Klik tombol di bawah untuk terhubung langsung via WhatsApp.",
     buttonText: "Chat WhatsApp Sekarang",
-    whatsappMessage: "Assalamualaikum, saya berminat dengan paket Haji Furoda 2026. Mohon info detail dan harganya."
+    whatsappMessage: "Assalamualaikum, saya berminat dengan paket Haji Furoda 2027. Mohon info detail dan harganya."
   },
   packages: {
-    title: "Pilihan Paket Haji Furoda 2026",
+    title: "Pilihan Paket Haji Furoda 2027",
     subtitle: "Pilih kenyamanan ibadah Anda dengan fasilitas terbaik yang kami sediakan.",
     items: [
     {
