@@ -3,7 +3,7 @@ import type { LandingPageData } from '../types';
 export const hajiFurodaData: LandingPageData = {
   hero: {
     title: "Haji Furoda 2026 Tanpa Antri",
-    subtitle: "Wujudkan impian suci Anda untuk berhaji tahun ini juga melalui program Haji Furoda 2026 tanpa antri, dengan jaminan Dokumen Perjalanan Resmi Mujamalah dan fasilitas VVIP bintang 5 yang memberikan kenyamanan maksimal serta bimbingan ibadah sesuai sunnah bersama Jana Madinah Wisata.",
+    subtitle: "Wujudkan impian suci Anda untuk berhaji tahun ini juga melalui program Haji Furoda 2026 tanpa antri, dengan jaminan Legalitas Resmi dan fasilitas VVIP bintang 5 yang memberikan kenyamanan maksimal serta bimbingan ibadah sesuai sunnah bersama Jana Madinah Wisata.",
     targetDate: "2026-06-15T00:00:00", // Approximate Hajj date for 2026
     bgImage: "https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/10022/mp-mekkah-kaabah.webp"
   },
@@ -14,12 +14,12 @@ export const hajiFurodaData: LandingPageData = {
       {
         icon: "⚡",
         title: "Tanpa Antri (Langsung Berangkat)",
-        description: "Anda tidak perlu lagi menunggu antrian haji reguler yang mencapai puluhan tahun, karena dengan mendaftar tahun ini, InsyaAllah Anda bisa langsung berangkat menunaikan ibadah haji tahun ini juga menggunakan Dokumen Perjalanan Mujamalah resmi."
+        description: "Anda tidak perlu lagi menunggu antrian haji reguler yang mencapai puluhan tahun, karena dengan mendaftar tahun ini, InsyaAllah Anda bisa langsung berangkat menunaikan ibadah haji tahun ini juga secara legal dan terdaftar resmi."
       },
       {
         icon: "✅",
-        title: "Visa Resmi & Terjamin",
-        description: "Kami menjamin penggunaan Dokumen Perjalanan Mujamalah (Furoda) yang terdaftar secara resmi dan sah di dalam sistem e-Hajj Kerajaan Arab Saudi, sehingga transparansi dan keamanan legalitas perjalanan Anda menjadi prioritas utama kami."
+        title: "Izin Keberangkatan Resmi & Terjamin",
+        description: "Kami menjamin penggunaan izin keberangkatan yang terdaftar secara resmi dan sah di dalam sistem e-Hajj Kerajaan Arab Saudi, sehingga transparansi dan keamanan legalitas perjalanan Anda menjadi prioritas utama kami."
       },
       {
         icon: "👳‍♂️",
@@ -51,12 +51,12 @@ export const hajiFurodaData: LandingPageData = {
       "Masa tunggu antrian Haji Reguler di Indonesia saat ini sudah sangat panjang, bahkan bisa mencapai 20 hingga 30 tahun lamanya.",
       "Bahkan untuk program Haji Plus (ONH Plus) sekalipun, kini para calon jamaah masih harus bersabar menunggu antrian sekitar 5 hingga 7 tahun.",
       "Kondisi usia yang semakin bertambah tua membuat fisik semakin menurun, sehingga dikhawatirkan tidak lagi prima jika harus menunggu terlalu lama.",
-      "Adanya kekhawatiran yang mendalam mengenai legalitas dokumen perjalanan haji yang belakangan ini marak bermasalah dan merugikan jamaah."
+      "Adanya kekhawatiran yang mendalam mengenai status izin keberangkatan haji yang belakangan ini marak bermasalah dan merugikan jamaah."
     ],
     solutionTitle: "Haji Furoda Tanpa Antri Adalah Solusinya",
     solutionPoints: [
       "Kepastian untuk bisa berangkat menunaikan ibadah haji pada tahun 2026 tanpa perlu melewati masa tunggu antrian yang memakan waktu bertahun-tahun.",
-      "Jaminan keamanan dan ketenangan hati dengan legalitas yang aman menggunakan Dokumen Perjalanan Mujamalah yang resmi dan terdaftar.",
+      "Jaminan keamanan dan ketenangan hati dengan legalitas yang aman melalui izin keberangkatan yang resmi dan terdaftar.",
       "Menikmati fasilitas layanan premium yang dirancang khusus untuk memberikan kenyamanan maksimal, sangat cocok bagi jamaah lansia maupun keluarga.",
       "Mengikuti program perjalanan ibadah yang disusun secara padat dan terstruktur agar Anda dapat fokus sepenuhnya pada kekhusyukan ibadah di Tanah Suci."
     ]
@@ -75,7 +75,7 @@ export const hajiFurodaData: LandingPageData = {
     subtitle: "Testimoni asli dari jamaah yang telah kami berangkatkan.",
     items: [
       {
-        quote: "Alhamdulillah, awalnya ragu karena banyak berita miring soal haji furoda. Tapi bersama Jana Madinah Wisata, semua transparan. Visa keluar tepat waktu, fasilitas hotelnya benar-benar dekat. Ibadah jadi lancar.",
+        quote: "Alhamdulillah, awalnya ragu karena banyak berita miring soal haji furoda. Tapi bersama Jana Madinah Wisata, semua transparan. Izin keluar tepat waktu, fasilitas hotelnya benar-benar dekat. Ibadah jadi lancar.",
         name: "Bpk. H. Ahmad Fauzi",
         location: "Jakarta Selatan",
         avatar: "https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/10462/testimonial-profile-1.webp"
@@ -97,7 +97,7 @@ export const hajiFurodaData: LandingPageData = {
   faq: [
     {
       question: "Apa itu Haji Furoda dan apakah resmi di Indonesia?",
-      answer: "Haji Furoda adalah program haji mandiri menggunakan Dokumen Perjalanan Mujamalah (undangan langsung Kerajaan Arab Saudi) tanpa menggunakan kuota pemerintah RI. Program ini 100% RESMI dan LEGAL, diatur dalam UU No. 8 Tahun 2019 tentang Penyelenggaraan Ibadah Haji dan Umrah."
+      answer: "Haji Furoda adalah program haji mandiri melalui undangan langsung Kerajaan Arab Saudi tanpa menggunakan kuota pemerintah RI. Program ini 100% RESMI dan LEGAL, diatur dalam UU No. 8 Tahun 2019 tentang Penyelenggaraan Ibadah Haji dan Umrah."
     },
     {
       question: "Apakah Jana Madinah Wisata memiliki izin resmi PIHK?",
@@ -108,8 +108,8 @@ export const hajiFurodaData: LandingPageData = {
       answer: "Perbedaan paling mendasar adalah waktu tunggu. Haji Plus (kuota pemerintah) saat ini memiliki masa tunggu antrian sekitar 5-7 tahun, sedangkan Haji Furoda TANPA ANTRI (InsyaAllah langsung berangkat di tahun yang sama saat Anda mendaftar)."
     },
     {
-      question: "Bagaimana jika Visa Furoda tidak terbit (Gagal Berangkat)?",
-      answer: "Kami mengutamakan transparansi akad. Mengingat dokumen perjalanan adalah hak prerogatif Kerajaan Saudi, jika Qadarullah dokumen perjalanan tidak terbit, kami memberikan JAMINAN 100% UANG KEMBALI (Full Refund) kepada calon jamaah tanpa potongan atau sesuai yang tertuang dalam akad perjanjian."
+      question: "Bagaimana jika Izin Keberangkatan Furoda tidak terbit (Gagal Berangkat)?",
+      answer: "Kami mengutamakan transparansi akad. Mengingat izin keberangkatan adalah hak prerogatif Kerajaan Saudi, jika Qadarullah izin tersebut tidak terbit, kami memberikan JAMINAN 100% UANG KEMBALI (Full Refund) kepada calon jamaah tanpa potongan atau sesuai yang tertuang dalam akad perjanjian."
     },
     {
       question: "Fasilitas apa saja yang didapatkan jamaah Haji Furoda?",
@@ -121,14 +121,14 @@ export const hajiFurodaData: LandingPageData = {
     },
     {
       question: "Kapan waktu terbaik mendaftar Haji Furoda 2026?",
-      answer: "Karena kuota Dokumen Perjalanan Mujamalah sangat terbatas dan diperebutkan jamaah seluruh dunia, kami sangat menyarankan pendaftaran dilakukan SEKARANG atau paling lambat sebelum Ramadhan 2026 agar proses pengurusan dokumen perjalanan haji lebih diprioritaskan."
+      answer: "Karena kuota izin Furoda sangat terbatas dan diperebutkan jamaah seluruh dunia, kami sangat menyarankan pendaftaran dilakukan SEKARANG atau paling lambat sebelum Ramadhan 2026 agar proses pengurusan izin keberangkatan haji lebih diprioritaskan."
     }
   ],
   cta: {
     title: "Siap Menjadi Tamu Allah Tahun 2026?",
-    description: "Kuota Dokumen Perjalanan Furoda sangat terbatas. Jangan biarkan keraguan menunda niat suci Anda. Konsultasikan rencana haji Anda bersama kami sekarang.",
+    description: "Kuota program Furoda sangat terbatas. Jangan biarkan keraguan menunda niat suci Anda. Konsultasikan rencana haji Anda bersama kami sekarang.",
     boxTitle: "Konsultasi Gratis & Cek Ketersediaan Seat",
-    boxDescription: "Tim kami siap menjelaskan detail paket, persyaratan dokumen perjalanan, dan skema pembayaran. Klik tombol di bawah untuk terhubung langsung via WhatsApp.",
+    boxDescription: "Tim kami siap menjelaskan detail paket, persyaratan administrasi, dan skema pembayaran. Klik tombol di bawah untuk terhubung langsung via WhatsApp.",
     buttonText: "Chat WhatsApp Sekarang",
     whatsappMessage: "Assalamualaikum, saya berminat dengan paket Haji Furoda 2026. Mohon info detail dan harganya."
   },
@@ -141,7 +141,7 @@ export const hajiFurodaData: LandingPageData = {
       duration: "23 Hari",
       price: "USD $18.5K",
       features: [
-        "Dokumen Perjalanan Haji Furoda / Mujamalah Resmi",
+        "Legalitas Haji Furoda Resmi",
         "Tiket Pesawat Ekonomi PP",
         "Hotel Bintang 3 Sesuai Mashaer",
         "Tenda Maktab Furoda Sesuai Mashaer",
@@ -159,7 +159,7 @@ export const hajiFurodaData: LandingPageData = {
       duration: "24 Hari",
       price: "USD $27K",
       features: [
-        "Dokumen Perjalanan Haji Furoda / Mujamalah Resmi",
+        "Legalitas Haji Furoda Resmi",
         "Tiket Pesawat PP (Direct Jeddah)",
         "Hotel Bintang 5 Makkah & Madinah",
         "Tenda Ber-AC Maktab Furoda",
@@ -182,7 +182,7 @@ export const hajiFurodaData: LandingPageData = {
       duration: "24 Hari",
       price: "USD $17.5K",
       features: [
-        "Dokumen Perjalanan Haji Resmi",
+        "Legalitas Haji Resmi",
         "Tiket Pesawat PP Ekonomi",
         "Hotel Bintang 5 Makkah & Madinah",
         "Tenda Maktab VIP Arafah & Mina",
