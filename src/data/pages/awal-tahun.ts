@@ -59,7 +59,7 @@ export const awalTahunData: LandingPageData = {
   },
   faq: [
     { question: "Berapa suhu rata-rata saat Awal Tahun?", answer: "Di bulan Januari-Februari, suhu berkisar 18-28 derajat celcius, sangat nyaman bagi jamaah Indonesia." },
-    { question: "Apakah harga paket sudah all-in?", answer: "Mayoritas paket kami sudah termasuk tiket PP, hotel, legalitas perjalanan, makan, dan handling. Silakan cek detail masing-masing paket." },
+    { question: "Apakah harga paket sudah all-in?", answer: "Mayoritas paket kami sudah termasuk tiket PP, hotel, kelengkapan perjalanan, makan, dan handling. Silakan cek detail masing-masing paket." },
     { question: "Berapa lama proses administrasi perjalanan?", answer: "Proses pengurusan administrasi umroh saat ini sangat cepat, biasanya 3-5 hari kerja setelah berkas lengkap." },
     { question: "Bagaimana cara memastikan travel umroh yang terpercaya?", answer: "Pilihlah travel yang memiliki izin resmi dari Kementerian Agama RI, tergabung dalam asosiasi travel umroh terkemuka, dan telah melayani ribuan jamaah dengan rating kepuasan tinggi. Anda bisa cek legalitas travel yang kami rekomendasikan." },
     { question: "Apakah bimbingan ibadah sesuai dengan Sunnah?", answer: "Travel rekanan kami berkomitmen menyelenggarakan ibadah umroh sesuai tuntunan Al-Qur'an dan As-Sunnah, dengan pembimbing yang berlandaskan pemahaman salafus shalih. Kajian dan manasik selalu ditekankan pada dalil yang shahih." },

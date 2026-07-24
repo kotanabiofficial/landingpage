@@ -35,6 +35,9 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500">
+        <p className="mb-4 text-sm max-w-4xl mx-auto px-6">
+          Disclaimer: PT. Inovasi Kota Nabi adalah platform/konsultan travel online yang bermitra dengan penyelenggara perjalanan resmi (PPIU/PIHK), dan bukan instansi pemerintah atau penerbit visa langsung.
+        </p>
         <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All Rights Reserved.</p>
       </div>
     </footer>

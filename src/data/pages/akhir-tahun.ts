@@ -143,7 +143,7 @@ export const akhirTahunData: LandingPageData = {
       name: 'Umroh Executive Akhir Tahun 22 Desember 2026 BY MUTIARA SUNNAH',
       duration: '9 Hari',
       price: 'Mulai dari Rp43.300.000',
-      features: ['Garuda Indonesia (MED-JED)', 'Hotel Movenpick Mekkah', 'Hotel Deyar Aleiman Madinah', 'Ijin Umroh Kemenag Resmi'],
+      features: ['Garuda Indonesia (MED-JED)', 'Hotel Movenpick Mekkah', 'Hotel Deyar Aleiman Madinah', 'Free Kereta Cepat'],
       isPopular: false,
       image: 'https://cdn.muslimpergi.com/uploads/listing/pict/8723/medium_WhatsApp_Image_2026-06-10_at_08.43.13_1781057441.jpeg',
       waMessage: 'Assalamualaikum, saya tertarik dengan *UMROH EXECUTIVE AKHIR TAHUN 22 DESEMBER 2026*. Mohon informasi lengkapnya.'

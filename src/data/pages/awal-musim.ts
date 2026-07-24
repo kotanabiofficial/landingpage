@@ -15,7 +15,7 @@ export const awalMusimData: LandingPageData = {
       { icon: '💎', title: 'Fasilitas Lebih Fresh', description: 'Hotel dan transportasi baru saja melewati masa peremajaan setelah musim haji, memastikan kenyamanan maksimal.' },
       { icon: '📅', title: 'Persiapan Lebih Matang', description: 'Merencanakan dari sekarang memberikan Anda waktu luang untuk persiapan fisik, mental, dan keilmuan manasik.' },
       { icon: '🤝', title: 'Harga Paling Kompetitif', description: 'Dapatkan penawaran harga terbaik di awal musim sebelum harga melonjak di masa high season.' },
-      { icon: '📜', title: 'Kepastian Keberangkatan', description: 'Kuota maskapai dan izin keberangkatan di awal musim sangat melimpah, menjamin jadwal keberangkatan Anda.' }
+      { icon: '📜', title: 'Kepastian Keberangkatan', description: 'Kuota penerbangan dan layanan perjalanan di awal musim sangat melimpah, menjamin jadwal keberangkatan Anda.' }
     ]
   },
   problemAgitation: {
@@ -59,7 +59,7 @@ export const awalMusimData: LandingPageData = {
   },
   faq: [
     { question: "Kapan Umroh Awal Musim 1448H diberangkatkan?", answer: "Keberangkatan awal musim 1448H akan dimulai pada bulan Juni hingga September 2026." },
-    { question: "Apakah kepastian izin keberangkatan sudah terjamin?", answer: "Alhamdulillah, sistem pendaftaran Umroh langsung dibuka di awal musim (Muharram). Kami memastikan semua persyaratan jamaah terproses tepat waktu." },
+    { question: "Apakah jadwal keberangkatan sudah terjamin?", answer: "Alhamdulillah, sistem pendaftaran Umroh langsung dibuka di awal musim (Muharram). Kami memastikan semua persyaratan jamaah terproses tepat waktu." },
     { question: "Bagaimana dengan kondisi cuaca di bulan Juni-September?", answer: "Cuaca akan terasa hangat. Namun, tim muthawif kami telah menyesuaikan jadwal kegiatan luar ruangan agar Anda tetap nyaman dan tidak kelelahan." },
     { question: "Apakah ada program bimbingan sebelum berangkat?", answer: "Tentu. Kami memberikan program Manasik Umroh intensif sesuai pemahaman Salafus Shalih agar ibadah Anda benar dan diterima (mabrur)." },
     { question: "Bisakah saya mendaftar sekarang meski keberangkatan masih Juni 2026?", answer: "Sangat bisa! Bahkan kami sangat menyarankan mendaftar lebih awal untuk mengamankan seat penerbangan dan harga terbaik sebelum kuota penuh." },

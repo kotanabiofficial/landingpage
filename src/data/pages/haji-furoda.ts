@@ -18,8 +18,8 @@ export const hajiFurodaData: LandingPageData = {
       },
       {
         icon: "✅",
-        title: "Izin Keberangkatan Resmi & Terjamin",
-        description: "Kami menjamin penggunaan izin keberangkatan yang terdaftar secara resmi dan sah di dalam sistem e-Hajj Kerajaan Arab Saudi, sehingga transparansi dan keamanan legalitas perjalanan Anda menjadi prioritas utama kami."
+        title: "Layanan Haji Furoda Lengkap Bersama Travel Berizin Resmi",
+        description: "Kami menawarkan paket perjalanan haji yang didukung oleh travel resmi dan terdaftar di dalam sistem e-Hajj Kerajaan Arab Saudi, sehingga transparansi dan keamanan legalitas perjalanan Anda menjadi prioritas utama kami."
       },
       {
         icon: "👳‍♂️",
@@ -56,7 +56,7 @@ export const hajiFurodaData: LandingPageData = {
     solutionTitle: "Haji Furoda Tanpa Antri Adalah Solusinya",
     solutionPoints: [
       "Kepastian untuk bisa berangkat menunaikan ibadah haji pada tahun 2027 tanpa perlu melewati masa tunggu antrian yang memakan waktu bertahun-tahun.",
-      "Jaminan keamanan dan ketenangan hati dengan legalitas yang aman melalui izin keberangkatan yang resmi dan terdaftar.",
+      "Jaminan keamanan dan ketenangan hati dengan legalitas yang aman melalui travel berizin resmi dan terdaftar.",
       "Menikmati fasilitas layanan premium yang dirancang khusus untuk memberikan kenyamanan maksimal, sangat cocok bagi jamaah lansia maupun keluarga.",
       "Mengikuti program perjalanan ibadah yang disusun secara padat dan terstruktur agar Anda dapat fokus sepenuhnya pada kekhusyukan ibadah di Tanah Suci."
     ]
@@ -75,7 +75,7 @@ export const hajiFurodaData: LandingPageData = {
     subtitle: "Testimoni asli dari jamaah yang telah kami berangkatkan.",
     items: [
       {
-        quote: "Alhamdulillah, awalnya ragu karena banyak berita miring soal haji furoda. Tapi bersama Jana Madinah Wisata, semua transparan. Izin keluar tepat waktu, fasilitas hotelnya benar-benar dekat. Ibadah jadi lancar.",
+        quote: "Alhamdulillah, awalnya ragu karena banyak berita miring soal haji furoda. Tapi bersama Jana Madinah Wisata, semua transparan. Proses keberangkatan tepat waktu, fasilitas hotelnya benar-benar dekat. Ibadah jadi lancar.",
         name: "Bpk. H. Ahmad Fauzi",
         location: "Jakarta Selatan",
         avatar: "https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/10462/testimonial-profile-1.webp"
@@ -108,8 +108,8 @@ export const hajiFurodaData: LandingPageData = {
       answer: "Perbedaan paling mendasar adalah waktu tunggu. Haji Plus (kuota pemerintah) saat ini memiliki masa tunggu antrian sekitar 5-7 tahun, sedangkan Haji Furoda TANPA ANTRI (InsyaAllah langsung berangkat di tahun yang sama saat Anda mendaftar)."
     },
     {
-      question: "Bagaimana jika Izin Keberangkatan Furoda tidak terbit (Gagal Berangkat)?",
-      answer: "Kami mengutamakan transparansi akad. Mengingat izin keberangkatan adalah hak prerogatif Kerajaan Saudi, jika Qadarullah izin tersebut tidak terbit, kami memberikan JAMINAN 100% UANG KEMBALI (Full Refund) kepada calon jamaah tanpa potongan atau sesuai yang tertuang dalam akad perjanjian."
+      question: "Bagaimana jika keberangkatan Furoda tertunda atau batal?",
+      answer: "Kami mengutamakan transparansi akad. Mengingat persetujuan akhir adalah hak prerogatif Kerajaan Saudi, jika Qadarullah keberangkatan tidak terealisasi, kami memberikan JAMINAN 100% UANG KEMBALI (Full Refund) kepada calon jamaah tanpa potongan atau sesuai yang tertuang dalam akad perjanjian."
     },
     {
       question: "Fasilitas apa saja yang didapatkan jamaah Haji Furoda?",
@@ -121,7 +121,7 @@ export const hajiFurodaData: LandingPageData = {
     },
     {
       question: "Kapan waktu terbaik mendaftar Haji Furoda 2027?",
-      answer: "Karena kuota izin Furoda sangat terbatas dan diperebutkan jamaah seluruh dunia, kami sangat menyarankan pendaftaran dilakukan SEKARANG atau paling lambat sebelum Ramadhan 2027 agar proses pengurusan izin keberangkatan haji lebih diprioritaskan."
+      answer: "Karena kuota haji Furoda sangat terbatas dan diperebutkan jamaah seluruh dunia, kami sangat menyarankan pendaftaran dilakukan SEKARANG atau paling lambat sebelum Ramadhan 2027 agar proses persiapan dan pendaftaran haji lebih diprioritaskan."
     }
   ],
   cta: {
