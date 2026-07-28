@@ -109,7 +109,7 @@ export const akhirTahunData: LandingPageData = {
       price: 'Mulai dari Rp48.000.000',
       features: ['Turkey 4D 3N', 'Merasakan Sensasi Salju', 'Hotel Bintang 4', 'Nasi Unta & Albaik'],
       isPopular: false,
-      image: 'https://cdn.muslimpergi.com/uploads/listing/pict/8430/medium_UMRAH_PLUS_TURKI_21_DESEMBER_2026.jpg',
+      image: 'https://cdn.muslimpergi.com/uploads/gallery/pict/12090/kn_nakhla-umroh-plus-turki-desember-2026_1785223230.jpg#ref=storage.googleapis.com',
       waMessage: 'Assalamualaikum, saya tertarik dengan *UMROH PLUS TURKEY AKHIR TAHUN*. Mohon informasi lengkapnya.'
     },
     {
@@ -127,7 +127,7 @@ export const akhirTahunData: LandingPageData = {
       price: 'Mulai dari Rp34.900.000',
       features: ['City Tour Thaif', 'Tour Museum Wahyu', 'Peternakan Unta', 'Hotel Bintang 4'],
       isPopular: false,
-      image: 'https://cdn.muslimpergi.com/uploads/listing/pict/8137/medium_27_desember_update_1783924773.jpg',
+      image: 'https://cdn.muslimpergi.com/uploads/gallery/pict/12089/kn_namira-umroh-akhir-tahun-tahun-plus-thaif-2026_1785223222.jpg#ref=storage.googleapis.com',
       waMessage: 'Assalamualaikum, saya tertarik dengan *PAKET UMROH PLUS THAIF*. Mohon informasi lengkapnya.'
     },
     {
@@ -154,7 +154,7 @@ export const akhirTahunData: LandingPageData = {
       price: 'Mulai dari Rp32.700.000',
       features: ['Qatar Airways / Oman Air', 'Maysan Al-Maqam Mekkah', 'Arkan Almanar Madinah', 'All In & Handling'],
       isPopular: false,
-      image: 'https://cdn.muslimpergi.com/uploads/listing/pict/8836/medium_4_1782716681.png',
+      image: 'https://cdn.muslimpergi.com/uploads/gallery/pict/12088/kn_jmw-umroh-esensial-journey-2026_1785223222.jpg#ref=storage.googleapis.com',
       waMessage: 'Assalamualaikum, saya tertarik dengan *UMROH ESSENTIAL JOURNEY VOL. II NOVEMBER 2026*. Mohon informasi lengkapnya.'
     }
   ]
